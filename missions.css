@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Desktop/Global View*/
+*{
+  box-sizing: content-box !important;
+}
+
+.col{
+	float: left;
+	padding: 1%;
+}
+
+.col-lg{
+	width: 31.3%;
+}
+
+.col-lg img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+header{
+	padding: 10px 20px 20px 20px;
+}
+
+
+/*Tablet View*/
+
+@media (max-width: 768px){
+
+	.col-md {
+		width: 48%;
+	}
+
+}
+
+/*Mobile View*/
+
+@media (max-width: 400px){
+
+	.col-sm{
+		width: 100%;
+	}
+
+	.col {
+		padding:0;
+	}
+}

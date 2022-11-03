@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stage 3 Security</title>
+    <link rel="stylesheet" href="../../styles.css">
+	<link rel="stylesheet" href="../../bootstrap.min.css">
+    <link rel="stylesheet" href="../../font-awesome.min.css">
+    <link rel="stylesheet" href="../../bitter.css">
+    <link rel="icon" href="../../images/Logo.png">
+	<script src="../code.js"></script>
+	<script type="text/javascript">
+		function codeGenerator(){
+			var submitted = document.getElementById('answer_input').value;
+			var link = window.location.href;
+			var part1 = link.slice(0, link.lastIndexOf('/'))
+			var part2 = "/"
+			var part3 = ".html"
+			var submitted = submitted.toUpperCase();
+			var submittedCode = code(submitted);
+			var submittedCode = String(submittedCode);
+			console.log(submittedCode)
+			var answerCode = "2.989873004017458e+24";
+
+			if (submittedCode === answerCode){
+				window.location = String(part1.concat(part2, submitted, part3));
+			}
+
+			else{
+				alert("Wrong Answer!");
+			}
+		}
+	</script>
+  </head>
+  <body>
+     <div style="background-color: #444">
+        <div class="header-dark">
+            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+                <div class="container"><a class="navbar-brand" href="../../index.html">The New Moon</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="../../about.html">About</a></li>
+							<li class="nav-item" role="presentation"><a class="nav-link" href="../../plans.html">Plans</a></li>
+							<li class="nav-item" role="presentation"><a class="nav-link" href="../../sigil.html">Sigils</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="../../staff.html">Staff </a>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="../../seraphim.html">Seraphim</a><a class="dropdown-item" role="presentation" href="../../cherubim.html">Cherubim</a><a class="dropdown-item" role="presentation" href="../../thrones.html">Thrones</a></div>
+                            </li>
+                        </ul>
+						<div class="form-inline mr-auto" target="_self"></div>
+                        </span><a class="btn btn-light action-button login" role="button" href="../../login.html">Login</a></div>
+                </div>
+            </nav>
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <h1 class="text-center">Stage 3 Security</h1>
+                    </div>
+                </div>
+            </div>
+		 	<div class="container">
+				<p class="text-center" style="color:white">Stop falling into a spiral, and don't forget to store your things.</p>
+				<img src="Stage 3 CANDLE Puzzle.png" class="center">
+		     </div><br><br>
+		     <div style="text-align: center">
+		       <input type="text" class="answer" id="answer_input" placeholder="****************">
+		       <button type="button" onClick="codeGenerator()">Submit</button>
+	         </div>
+        </div>
+    </div>
+    <script src="../../jquery.min.js"></script>
+    <script src="../../bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

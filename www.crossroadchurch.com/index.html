@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crossroad Church</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/candle.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <a style="display:none" href="https://www.flaticon.com/free-icons/candle" title="candle icons">Candle icons created by Freepik - Flaticon</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <style>
+      .jumbotron{
+        margin:15px 30px 0px 30px;
+        border-radius:10px;
+          background:
+      linear-gradient(
+        rgba(0, 0, 250, 0.25),
+        rgba(125, 250, 250, 0.45)
+      ),
+      url(images/sea.jfif);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color:white !important;
+      height:340px;
+      }
+
+      .btn-outline-danger{
+        color:white;
+        border-color:white;
+        border-radius:0px;
+        font-weight:100;
+        margin-top:20px;
+      }
+      .lead{
+        font-family:raleway;
+        font-weight:100;
+        margin-top:-10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a href="index.html">Crossroad Church</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li id="login"><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li id="login"><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </header>
+    <script src="navbar.js"></script>
+    <div>
+      <!-- Jumbotron -->
+      <div class="jumbotron jumbotron-fluid">
+      <div class="container"><br>
+        <h1 class="display-2">Crossroad Church.</h1>
+        <p class="lead">Welcome home. You belong here, no matter what. Join us, and we'll bring you a better future.</p>
+        <button class="btn btn-outline-danger">Join us.</button>
+        <script type="text/javascript">
+            const audio = new Audio("images/UNKNOWN.mp3");
+            const buttons = document.querySelectorAll("button");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    audio.play();
+                });
+            });
+
+        </script>
+      </div>
+    </div><hr><br>
+    <div class="container">
+      <h1 class="text-center" style="font-family: 'League Spartan', sans-serif;">We are here to help.</h1>
+      <p class="text-center" style="font-family: 'League Spartan', sans-serif;"><b>A home where all are welcome to find peace & prayer, hope & healing, life & love. Come and join us.</b></p>
+      <div class="row">
+        <div class="col-md text-center bg-primary m-2 p-2">
+          <h1 style="font-family: 'League Spartan', sans-serif;">Happiness</h1>
+          <p>We want to help you through your problems, and get you on the happier side of life.</p>
+        </div>
+        <div class="col-md text-center bg-primary m-2 p-2">
+          <h1 style="font-family: 'League Spartan', sans-serif;">Fulfillment</h1>
+          <p>Wa want you to be able to feel fulfillment with what you have accomplished. Not many can do what you do, and you have done that. Feel good about yourself!</p>
+        </div>
+        <div class="col-md text-center bg-primary m-2 p-2">
+          <h1 style="font-family: 'League Spartan', sans-serif;">Salvation</h1>
+          <p>We want to bring you to salvation, and to find your way home.</p>
+          <p class="text-primary">49 20 73 65 65 20 68 65 72 20 67 61 7a 65 2e</p>
+        </div>
+      </div>
+    </div>
+      <!-- Jumbotron -->
+    </div>
+    <hr>
+    <div class="testimonials">
+      <img src="images/Jamie.png" alt="Avatar" style="width:90px">
+      <p><span>Jamie Fox.</span></p>
+      <p>I love this place. I grew, and learnt from all my mistakes here! I'll never stop growing when I'm here!</p>
+    </div>
+    <div class="testimonials">
+      <img src="images/Shantelle.png" alt="Avatar" style="width:90px">
+      <p><span>Shantelle Alvares.</span></p>
+      <p>This place helped me to grow out of my shell, and to grow from that experience.</p>
+    </div>
+    <div class="testimonials">
+      <img src="images/Joseph.png" alt="Avatar" style="width:90px">
+      <p><span>Joseph Crane.</span></p>
+      <p>I used to be in a horrible life, and a horrible relationship. But with Crossroad Church, I managed to tell myself to man up.</p>
+    </div>
+  </body>
+</html>

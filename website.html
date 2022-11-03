@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Play</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    input[type=text] {
+      width: 50%;
+      padding: 12px 20px;
+      padding-left:20%;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      background-color: #3CBC8D;
+      color: white;
+      text-align: center;
+    }
+    </style>
+    <script type="text/javascript">
+      function youreLookingForSomething(){
+      	var looking = document.getElementById('looking').value;
+      	var link = window.location.href;
+      	var part1 = link.slice(0, link.lastIndexOf('/'))
+      	var part2 = "/"
+      	window.location = String(part1.concat(part2, looking));
+
+      }
+  	</script>
+  </head>
+  <body>
+      <nav>
+          <ul id="nav" class="nav">
+      	    <a href="index.html">HOME</a>
+      	    <a href="missions.html">OUR MISSIONS</a>
+            <a href="website.html">WEBSITE</a>
+            <a href="https://www.codexsecret.com/contact.html">CONTACT</a>
+          </ul>
+      </nav>
+      <h1 style="text-align: center;">Welcome! Are you here looking for a website? Type it down below!</h1>
+      <p style="text-align:center">When you are looking for a website link, just paste it in here, and be directed to the website. For example: If someone tells you to search for www.example.com, just place in "www.example.com" into the input box, and press search. You will be redirected to the website, and be able to search for secrets.</p>
+      <p style="text-align:center;color:red">NOTE: We advice you not to guess links unless told to. It will ruin your experience.</p>
+      <input type="text" id="looking" name="looking" style="display:none">
+      <button type="button" onclick="youreLookingForSomething()" style="display:none">Submit</button>
+    </body>
+</html>
