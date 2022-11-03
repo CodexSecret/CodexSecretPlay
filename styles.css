@@ -35,6 +35,7 @@ html {
 
 .table img{
     float: right;
+    width: 50px;
 }
 
 .open {
