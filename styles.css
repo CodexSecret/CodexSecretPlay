@@ -33,6 +33,10 @@ html {
     top: -4px;
 }
 
+.table img{
+    float: right;
+}
+
 .open {
     display: flex;
     display: -ms-flexbox;
